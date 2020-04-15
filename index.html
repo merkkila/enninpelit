@@ -7,16 +7,18 @@
     <title>Kunigatar Ennin pelikokoelma</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    <!--     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <link href="/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+    <link href="lib\fa\css\all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <script src="main.js"></script>
@@ -24,15 +26,54 @@
 
 <body>
 
-    <header class="jumbotron text-center">
-        <div class="container">
-            <h1 class="title"><i class="fas fa-crown"></i>
+    <nav class="navbar nav-pinkish">
+        <a class="navbar-brand" href="#"><i class="fas fa-crown"></i>
+            Ku-nin-ga-tar En-nin pe-lit
+            <i class="fas fa-crown"></i></a>
+        <button class="btn btn-primary" id="toggle-game-selection">Pe-li va-lik-ko</button>
+        <!--         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain"
+            aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+        </button>
 
-                Ku-nin-ga-tar En-nin pe-lit <i class="fas fa-crown"></i>
+        <div class="navbar-collapse collapse" id="navbarmain" style="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Va-lik-ko <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tie-to-vi-sa</a>
+                </li>
+               <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div> -->
+    </nav>
 
-            </h1>
+    <section class="container game-selection">
+        <h3>Va-lit-se pe-li</h3>
+<!--         <div class="card game-card" data-game="quiz">
+            <img class="card-img-top" src="lib/img/game-thumnails/quiz.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Tie-to-vi-sa</h4>
+                <p class="card-text">Vas-taa ky-sy-myk-siin</p>
+                <a href="#" class="btn btn-primary">Pe-laa!</a>
+            </div>
+        </div> -->
+        <div class="card game-card" data-game="math">
+            <img class="card-img-top" src="lib/img/game-thumnails/math.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Plus ja mii-nus</h4>
+                <p class="card-text">Las-ke plus ja mii-nus las-ku-ja!</p>
+                <a href="#" class="btn btn-primary">Pe-laa!</a>
+            </div>
         </div>
-    </header>
+
+    </section>
+    <section class="container game-container">
+
+    </section>
 </body>
 
 </html>
