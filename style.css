@@ -58,3 +58,6 @@ html * {
 #btn-new-question-math {
     display:none;
 }
+#mathAnswer {
+    width: 120px;
+}

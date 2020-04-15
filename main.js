@@ -56,9 +56,9 @@ function math() {
         if($('#mathAnswer').val() == window.games.math.answer){ 
             setScore('math',1)
             $('#btn-answer-math').hide();
+            $('#mathAnswer').prop( "disabled", true );
             $('#btn-new-question-math').show();
-            $('#right-or-wrong').html(`<span id="right-answer-math"><i class="fa fa-check"></i> Oi-kein! <span class="motivational-emoji">&#128588;</span></span>
-            `);
+            $('#right-or-wrong').html(`<span id="right-answer-math"><i class="fa fa-check"></i> Oi-kein! <span class="motivational-emoji">&#128588;</span></span>`);
         } else {
             $('#right-or-wrong').html(`           
             <span id="wrong-answer-math"> Ei ai-van oi-kein <span class="motivational-emoji">&#129300;</span></span>`);
